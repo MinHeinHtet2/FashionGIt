@@ -110,7 +110,28 @@
                   </div>
                   
                   <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-dark">Register</button>
+                    <button type="submit" class="btn btn-dark" id="accountRegistrationBtn">Register</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="accountRegistrationCompleteModal" tabindex="-1" aria-labelledby="accountRegistrationCompleteLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <!-- Change modal title id to "accountRegistrationCompleteLabel" and text to "Account Registration Complete" -->
+                                  <h1 class="modal-title fs-5" id="accountRegistrationCompleteLabel">Account Registration Complete</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <!-- Change modal body text to "Thank you for registering your account! Your account registration has been successfully completed." -->
+                                  Thank you for registering your account!
+                              </div>
+                              <div class="modal-footer">
+                                  <!-- Change button text to "Continue to Your Account" and add the link to the account.html page -->
+                                  <a href="index.html"><button type="button" class="add-to-cart-btn" data-bs-dismiss="modal">Ok</button></a>
+                              </div>
+                          </div>
+                      </div>  
+                    </div>
                   </div>
 
                   <script>
@@ -148,6 +169,14 @@
                             window.location.href = "login.html";
                         }
                     });
+                    const accountRegistrationBtn = document.getElementById("accountRegistrationBtn");
+
+                      // Attach a click event listener to the button
+                      accountRegistrationBtn.addEventListener("click", function() {
+                          // Show the modal with the new ID "accountRegistrationCompleteModal" when the button is clicked
+                          const accountRegistrationCompleteModal = new bootstrap.Modal(document.getElementById("accountRegistrationCompleteModal"));
+                          accountRegistrationCompleteModal.show();
+                      });
                   </script>
 
                   

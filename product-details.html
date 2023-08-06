@@ -191,11 +191,21 @@
                     <p class="product-price">$18</p>
                     <p class="product-detail-1">Size</p>
 
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select mb-2" aria-label="Default select example">
                     <option selected>---Choose Size---</option>
                     <option value="1">M</option>
                     <option value="2">L</option>
                     </select>
+
+                    <div class="product-row">
+                        <p class="product-detail-1 mt-4">Quantity</p>
+                        <div class="product-quantity-input justify-content-center align-items-center">
+                        <button class="quantity-btn minus-btn">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus-btn">+</button>
+                    </div>
+                    </div>
+                    
 
                     <button class="add-to-cart-btn">Add to Cart</button>
 
@@ -403,6 +413,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            const productRows = document.querySelectorAll(".product-row");
         const activeImage = document.querySelector('.active-image');
         const thumbnails = document.querySelectorAll('.thumbnail');
     
@@ -419,8 +430,55 @@
             thumbnail.classList.add('active');
         });
         });
+        function handleMinusButtonClick(event) {
+                        const productRow = event.currentTarget.closest(".product-row");
+                        const quantityInput = productRow.querySelector(".quantity-input");
+                        let currentValue = parseInt(quantityInput.value);
+                        if (currentValue > 1) {
+                            quantityInput.value = currentValue - 1;
+                            updateTotalPrice(productRow);
+                        }
+                    }
+            
+                    // Function to handle plus button click for a given product row
+                    function handlePlusButtonClick(event) {
+                        const productRow = event.currentTarget.closest(".product-row");
+                        const quantityInput = productRow.querySelector(".quantity-input");
+                        let currentValue = parseInt(quantityInput.value);
+                        quantityInput.value = currentValue + 1;
+                        updateTotalPrice(productRow);
+                    }
+            
+                    // Function to handle quantity input change for a given product row
+                    function handleQuantityInputChange(event) {
+                        const productRow = event.currentTarget.closest(".product-row");
+                        const quantityInput = productRow.querySelector(".quantity-input");
+                        let currentValue = parseInt(quantityInput.value);
+                        if (isNaN(currentValue) || currentValue < 1) {
+                            quantityInput.value = 1;
+                        }
+                        updateTotalPrice(productRow);
+                    }
+            
+                    // Attach event listeners to each product row
+                    productRows.forEach(productRow => {
+                        const minusBtn = productRow.querySelector(".minus-btn");
+                        const plusBtn = productRow.querySelector(".plus-btn");
+                        const quantityInput = productRow.querySelector(".quantity-input");
+            
+                        minusBtn.addEventListener("click", handleMinusButtonClick);
+                        plusBtn.addEventListener("click", handlePlusButtonClick);
+                        quantityInput.addEventListener("input", handleQuantityInputChange);
+            
+                        // Update total price for each product row on page load
+                        updateTotalPrice(productRow);
+                    });
     });
+
+    
     </script>
+
+    
 
     <script src="FG.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

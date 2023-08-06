@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="FG.css">
+    <link rel="stylesheet" href="FG.js">
+    <title>Home | Fashion Git</title>
+</head>
+<body>
+    <div class="main_container">
+
+        <nav class="navbar navbar-dark bg-transparent fixed-top d-flex flex-row align-content-center p-0">
+                        <div class="nav-container">   
+                            <div class="d-flex">
+                                <a class="navbar-brand" href="index.html"><img src="img/fashion_git_logo.svg" alt=""></a>
+                            </div>
+
+                            <div class="nav-links">
+                                <ul class="nav nav-underline ">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="shop.html">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="about.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="contact.html">Contact Us</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <!--Responsive Item-->
+                            <div class="nav-links-sm">
+                                <ul class="nav nav-underline ">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="shop.html" role="button" aria-expanded="false">Shop</a>
+                                        <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="index.html">Home</a></li>
+                                        <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+                                        <li><a class="dropdown-item" href="about.html">About Fashion Git</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--Responsive Item-->
+
+                            <div class="d-flex justify-content-end pt-2 pe-3">
+
+                                <!--Responsive Item-->
+                                <a href="add-to-cart.html">
+                                    <span class="navbar-cart-icon">
+                                        <img src="img/bag.svg" alt="" style="width: 20px;">
+                                    </span>
+                                </a>
+
+                            </div>
+
+                            <div class="navbar-brand">
+                                <button class="navbar-toggler text-bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                                
+                        <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img src="img/fashion_git_logo.svg" alt=""></h5>
+                                <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+
+                            <div class="offcanvas-body justify-content-between">
+                                
+                                <div class="offcanvas-section">
+
+                                    <h1 class="headings" id="welcomeMessage">Welcome</h1>
+
+                                    <div id="carouselExampleSlidesOnly" class="carousel slide mt-4 mb-3" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/discount-1-u.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/discount-2-u.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/discount-3-u.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-4">
+
+                                        <div class="d-flex flex-row ">
+                                            <img class="payment-icon" src="/img/credit-card-fill.svg" alt="">
+                                            <h1 class="headings ms-3">Payments we Accept </h1>
+                                        </div>
+
+                                        <div class="payment-cards-container mt-4">
+
+                                            <div class="payment-cards">
+                                                <img class="payment-card-img" src="/img/kpay.png" alt="">
+                                                <p class="payment-card-text">KBZ Pay</p>
+                                            </div>
+
+                                            <div class="payment-cards">
+                                                <img class="payment-card-img" src="/img/ayapay.png" alt="">
+                                                <p class="payment-card-text">AYA Pay</p>
+                                            </div>
+
+                                            <div class="payment-cards">
+                                                <img class="payment-card-img" src="/img/wavepay.png" alt="">
+                                                <p class="payment-card-text">WAVE Pay</p>
+                                            </div>
+
+
+                                        </div>
+    
+                                    </div>
+
+                                    <div class="account-section">
+                                        <a href="login.html"><button class="login-btn">Log In </button></a>
+                                        <a href="account.html"><button class="see-more-btn"> Account </button></a>  
+                                    </div>
+ 
+                                </div>
+
+                                
+
+                            </div>
+                        </div>
+
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                              const userName = localStorage.getItem("userName");
+                              if (userName) {
+                                const welcomeMessageElement = document.getElementById("welcomeMessage");
+                                welcomeMessageElement.textContent = "Welcome, " + userName;
+                              }
+                            });
+                            </script>
+
+
+        </nav>
+            
+        <div class="content-1">
+            <div class="content-1-left">
+                <img src="img/Pic1.png" class="img-fluid" alt="...">
+            </div>
+            <div class="content-1-right">
+                <div class="right_content" >
+                    <h1 class="content-1-h">Glow up with Fashion Git</h1>
+                    <p class="content-1-p">Your one-stop destination for all your fashion needs.</p>
+                    <a href="shop.html"><button type="button" class="btn btn-outline-dark mt-3">Shop Now</button></a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="content-2">
+            <div class="content-2-col-1">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="img/truck.svg" alt="Icon" class="truck">
+                    </div>
+                    <div class="card-text">
+                        <h3>Delivery</h3>
+                        <p>Only 5,000 MMK Delivery Fee for Every Orders.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-2-col-1">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="img/credit-card.svg" alt="Icon">
+                    </div>
+                    <div class="card-text">
+                        <h3>Payments</h3>
+                        <p>Fast and Secure Payment Methods</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-2-col-1">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="img/rotate-left-solid.svg" alt="Icon">
+                    </div>
+                    <div class="card-text">
+                        <h3>14-Days Return</h3>
+                        <p>Accept Return and Refunds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-3">
+
+            <div class="content-block">
+              <div class="bg-image" style="background-image: url('img/sneaker-1.jpg');">
+                <!-- You can adjust the background image using CSS -->
+                <div class="content">
+                  <h2>Sneakers</h2>
+                  <a href="shop.html"><button type="button" class="btn btn-outline-dark mt-3">Shop Now</button></a>
+                  
+                </div>
+              </div>
+            </div>
+          
+            <div class="content-block">
+              <div class="bg-image" style="background-image: url('img/clothing-2.jpg');">
+                <!-- You can adjust the background image using CSS -->
+                <div class="content">
+                  <h2>Clothings</h2>
+                  <a href="shop.html"><button type="button" class="btn btn-outline-dark mt-3">Shop Now</button></a>
+                  
+                </div>
+              </div>
+            </div>
+          
+            <div class="content-block">
+
+              <div class="bg-image" style="background-image: url('img/accessories-3.jpg');">
+                <!-- You can adjust the background image using CSS -->
+                <div class="content">
+                  <h2>Accessories</h2>
+                  <a href="shop.html"><button type="button" class="btn btn-outline-dark mt-3">Shop Now</button></a>
+                  
+                </div>
+              </div>
+            </div>
+          
+            <div class="content-block">
+              <div class="bg-image" style="background-image: url('img/bags-4.jpg');">
+                <!-- You can adjust the background image using CSS -->
+                <div class="content">
+                  <h2>Bags</h2>
+                  <a href="shop.html"><button type="button" class="btn btn-outline-dark mt-3">Shop Now</button></a>
+                </div>
+              </div>
+            </div>
+        </div>  
+
+        <div class="content-4">
+
+            <div class="content-4-header">
+                <h1>New Arrivals</h1>
+                <a href="shop.html"><button class="see-more-btn">See More</button></a>
+            </div>
+
+            <div class="product-slider">
+
+                <div class="product-card">
+                  <img src="img/vans-sushi.jpg" alt="Product 1">
+                  <h3>Vans Authentic Sushi</h3>
+                  <p>$75</p>
+                  <div class="product-buttons">
+                    <a href="product-details.html"><button class="view-details-btn">View Details</button></a>
+                    <a href="add-to-cart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
+                  </div>
+                </div>
+              
+                <div class="product-card">
+                    <img src="img/nike-aj-unc-blue.jpg" alt="Product 1">
+                    <h3>Nike Air Jordan 1 OG University Blue</h3>
+                    <p>$350</p>
+                    <div class="product-buttons">
+                        <a href="product-details.html"><button class="view-details-btn">View Details</button></a>
+                        <a href="add-to-cart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
+                      </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/nike-aj1-true-blue.png" alt="Product 1">
+                    <h3>Nike Air Jordan 1 OG True Blue</h3>
+                    <p>$170</p>
+                    <div class="product-buttons">
+                        <a href="product-details.html"><button class="view-details-btn">View Details</button></a>
+                        <a href="add-to-cart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
+                      </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="img/adidas-halter-neck.avif" alt="Product 1">
+                    <h3>Adidas Halter Neck Tank Top</h3>
+                    <p>$35</p>
+                    <div class="product-buttons">
+                        <a href="product-details.html"><button class="view-details-btn">View Details</button></a>
+                        <a href="add-to-cart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
+                      </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/adidas-pacer.avif" alt="Product 1">
+                    <h3>Adidas Pacer 3-Stripes Knit Shorts</h3>
+                    <p>$25</p>
+                    <div class="product-buttons">
+                        <a href="product-details.html"><button class="view-details-btn">View Details</button></a>
+                        <a href="add-to-cart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
+                      </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/adidas-marathon.avif" alt="Product 1">
+                    <h3>Adidas Marathon Shorts</h3>
+                    <p>$30</p>
+                    <div class="product-buttons">
+                        <a href="product-details.html"><button class="view-details-btn">View Details</button></a>
+                        <a href="add-to-cart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
+                      </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/nike-sportswear.webp" alt="Product 1">
+                    <h3>Nike SportWear Modern</h3>
+                    <p>$50</p>
+                    <div class="product-buttons">
+                        <a href="product-details.html"><button class="view-details-btn">View Details</button></a>
+                        <a href="add-to-cart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content-4">
+
+            <div class="content-4-header">
+                <h1>What's Trending</h1>
+                <a href="shop.html"><button class="see-more-btn">See More</button></a>
+            </div>
+
+            <div class="product-slider">
+
+                <div class="product-card">
+                  <img src="img/nike-aj3-retro.webp" alt="Product 1">
+                  <h3>Nike Air Jordan 3 Retro</h3>
+                  <p>$200</p>
+                  <div class="product-buttons">
+                    <a href="product-details.html"><button class="view-details-btn">View Details</button></a>
+                    <a href="add-to-cart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
+                  </div>
+                </div>
+              
+                <div class="product-card">
+                    <img src="img/adidas-messi.avif" alt="Product 1">
+                    <h3>Adidas MESSI#10</h3>
+                    <p>$180</p>
+                    <div class="product-buttons">
+                        <a href="product-details.html"><button class="view-details-btn">View Details</button></a>
+                        <a href="add-to-cart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
+                      </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/vans-barbie.png" alt="Product 1">
+                    <h3>Vans X Barbie Authentic</h3>
+                    <p>$95</p>
+                    <div class="product-buttons">
+                        <a href="product-details.html"><button class="view-details-btn">View Details</button></a>
+                        <a href="add-to-cart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
+                      </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="img/nike-sportswear-short.webp" alt="Product 1">
+                    <h3>Nike SportWear X Nike United</h3>
+                    <p>$100</p>
+                    <div class="product-buttons">
+                        <a href="product-details.html"><button class="view-details-btn">View Details</button></a>
+                        <a href="add-to-cart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
+                      </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/vans-barbie-backpack.png" alt="Product 1">
+                    <h3>Vans X Barbie Mini BackPack</h3>
+                    <p>$50</p>
+                    <div class="product-buttons">
+                        <a href="product-details.html"><button class="view-details-btn">View Details</button></a>
+                        <a href="add-to-cart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
+                      </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/adidas-asroma.avif" alt="Product 1">
+                    <h3>Adidas AS Roma 23/24</h3>
+                    <p>$100</p>
+                    <div class="product-buttons">
+                        <a href="product-details.html"><button class="view-details-btn">View Details</button></a>
+                        <a href="add-to-cart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
+                      </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/vans-barbie-crop-top.png" alt="Product 1">
+                    <h3>Vans X Barbie Crop Top</h3>
+                    <p>$40</p>
+                    <div class="product-buttons">
+                        <a href="product-details.html"><button class="view-details-btn">View Details</button></a>
+                        <a href="add-to-cart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/fashion_git_logo.svg" alt="Fashion Git Logo">
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <ul class="social-icons">
+                        <li><a href="#"><img src="img/facebook.svg" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="img/twitter.svg" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="img/instagram.svg" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="img/linkedin.svg" alt="LinkedIn"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Fashion Git. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+        
+
+  
+    
+        
+    <script src="FG.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+</body>
+</html>

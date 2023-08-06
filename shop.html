@@ -1,0 +1,431 @@
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Shop | Fashion Git</title>
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+                <link rel="stylesheet" href="FG.css">
+            </head>
+            <body>
+                <div class="main_container"> 
+
+                    <nav class="navbar navbar-dark bg-transparent fixed-top d-flex flex-row align-content-center p-0">
+                        <div class="nav-container">   
+                            <div class="d-flex">
+                                <a class="navbar-brand" href="index.html"><img src="img/fashion_git_logo.svg" alt=""></a>
+                            </div>
+
+                            <div class="nav-links">
+                                <ul class="nav nav-underline ">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="shop.html">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="about.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="contact.html">Contact Us</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <!--Responsive Item-->
+                            <div class="nav-links-sm">
+                                <ul class="nav nav-underline ">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="shop.html" role="button" aria-expanded="false">Shop</a>
+                                        <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="index.html">Home</a></li>
+                                        <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+                                        <li><a class="dropdown-item" href="about.html">About Fashion Git</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--Responsive Item-->
+
+                            <div class="d-flex justify-content-end pt-2 pe-3">
+
+                                <!--Responsive Item-->
+                                <a href="add-to-cart.html">
+                                    <span class="navbar-cart-icon">
+                                        <img src="img/bag.svg" alt="" style="width: 20px;">
+                                    </span>
+                                </a>
+
+                            </div>
+
+                            <div class="navbar-brand">
+                                <button class="navbar-toggler text-bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                                
+                        <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img src="img/fashion_git_logo.svg" alt=""></h5>
+                                <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+
+                            <div class="offcanvas-body justify-content-between">
+                                
+                                <div class="offcanvas-section">
+
+                                    <h1 class="headings" id="welcomeMessage">Welcome</h1>
+
+                                    <div id="carouselExampleSlidesOnly" class="carousel slide mt-4 mb-3" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/discount-1-u.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/discount-2-u.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/discount-3-u.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-4">
+
+                                        <div class="d-flex flex-row ">
+                                            <img class="payment-icon" src="/img/credit-card-fill.svg" alt="">
+                                            <h1 class="headings ms-3">Payments we Accept </h1>
+                                        </div>
+
+                                        <div class="payment-cards-container mt-4">
+
+                                            <div class="payment-cards">
+                                                <img class="payment-card-img" src="/img/kpay.png" alt="">
+                                                <p class="payment-card-text">KBZ Pay</p>
+                                            </div>
+
+                                            <div class="payment-cards">
+                                                <img class="payment-card-img" src="/img/ayapay.png" alt="">
+                                                <p class="payment-card-text">AYA Pay</p>
+                                            </div>
+
+                                            <div class="payment-cards">
+                                                <img class="payment-card-img" src="/img/wavepay.png" alt="">
+                                                <p class="payment-card-text">WAVE Pay</p>
+                                            </div>
+
+
+                                        </div>
+    
+                                    </div>
+
+                                    <div class="account-section">
+                                        <a href="login.html"><button class="login-btn">Log In </button></a>
+                                        <a href="account.html"><button class="see-more-btn"> Account </button></a>  
+                                    </div>
+ 
+                                </div>
+
+                                
+
+                            </div>
+                        </div>
+
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                              const userName = localStorage.getItem("userName");
+                              if (userName) {
+                                const welcomeMessageElement = document.getElementById("welcomeMessage");
+                                welcomeMessageElement.textContent = "Welcome, " + userName;
+                              }
+                            });
+                            </script>
+
+
+        </nav>
+
+                    <div class="content-shop-1 active">
+                        <div class="container-fluid">
+                        <div class="">
+                            <!-- The Brand Container with logos and names -->
+                            
+                            <div class="brand-container">
+                                <div class="brand-item active" data-bg-image="img/black.jpg">
+                                    <img class="brand-logo" src="img/all.png" alt="All Items Logo">
+                                    <h2 class="brand-name">All Items</h2>
+                                </div>
+
+                                <div class="brand-item" data-bg-image="img/vans-banner.jpg">
+                                    <img class="brand-logo" src="img/vans-logo.jpg  " alt="Vans Logo">
+                                    <h2 class="brand-name">Vans</h2>
+                                </div>
+
+                                <div class="brand-item" data-bg-image="img/nike-banner.jpg">
+                                    <img class="brand-logo" src="img/nikelogo.jpg" alt="Nike Logo">
+                                    <h2 class="brand-name">Nike</h2>
+                                </div>
+
+                                <div class="brand-item" data-bg-image="img/adidas-banner.jpg">
+                                    <img class="brand-logo" src="img/adidas-logo.jpg" alt="Adidas Logo">
+                                    <h2 class="brand-name">Adidas</h2>
+                                </div>
+                                <!-- Add more brand items as needed -->
+                            </div>
+                            
+                            
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid p-5">
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="headings">All Products</h1> 
+                                    
+                            </div>
+                            <div class="col d-flex flex-row justify-content-end">
+
+                                <div class="d-flex flex-row me-3">
+                                    
+                                    <div class="filter-tags">
+                                        <!-- dynamic filter tags -->
+                                    </div>
+                                    <button class="clear-filter-btn btn btn-secondary">Clear</button>
+                                </div>
+                                
+
+                                <div class="dropdown me-3">
+                                    <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Fitler
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Clothings</a></li>
+                                        <li><a class="dropdown-item" href="#">Sneakers</a></li>
+                                        <li><a class="dropdown-item" href="#">Accessories</a></li>
+                                        <li><a class="dropdown-item" href="#">Bags</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="navbar-search-icon">
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text" id="addon-wrapping"><img src="img/search.svg" alt=""></span>
+                                        <input type="text" class="form-control" id="search-input" placeholder="Search" aria-label="Search" aria-describedby="addon-wrapping">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shop-content">
+
+                        <div class="product-slider-shop" id="slider1">
+                            <div class="product-card-container-vertical">
+                                <div class="product-card-shop" data-brand="Nike" data-type="sneakers">
+                                    <img src="img/Sneaker.jpg" alt="Product 1">
+                                    <h3>Nike Blazer</h3>
+                                    <p>$105</p>
+                                    <div class="product-buttons">
+                                        <button class="view-details-btn btn">View Details</button>
+                                        <button class="add-to-cart-btn">Add to Cart</button>
+                                        
+                                    </div>
+                                    </div>
+                    
+                                    <div class="product-card-shop" data-brand="Nike" data-type="sneakers">
+                                        <img src="img/aj1-obsidian.png" alt="Product 1">
+                                        <h3>Nike Air Jordan 1 Mid "Obsidian"</h3>
+                                        <p>$110</p>
+                                        <div class="product-buttons">
+                                        <button class="view-details-btn">View Details</button>
+                                        <button class="add-to-cart-btn">Add to Cart</button>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="product-card-shop" data-brand="Nike" data-type="clothings">
+                                        <img src="img/nike-dri-fit.webp" alt="Product 1">
+                                        <h3>Nike Dri-Fit Legent</h3>
+                                        <p>$30</p>
+                                        <div class="product-buttons">
+                                        <button class="view-details-btn">View Details</button>
+                                        <button class="add-to-cart-btn">Add to Cart</button>
+                                        </div>
+                                    </div>
+            
+                                    <div class="product-card-shop" data-brand="Nike" data-type="accessories">
+                                        <img src="img/nike-risecap.jpg" alt="Product 1">
+                                        <h3>Nike Rise Cap</h3>
+                                        <p>$28</p>
+                                        <div class="product-buttons">
+                                        <button class="view-details-btn">View Details</button>
+                                        <button class="add-to-cart-btn">Add to Cart</button>
+                                        </div>
+                                    </div>
+            
+                                    <div class="product-card-shop" data-brand="Nike" data-type="accessories">
+                                        <img src="img/nike-gym-club.webp" alt="Product 1">
+                                        <h3>Nike Gym Club</h3>
+                                        <p>$42</p>
+                                        <div class="product-buttons">
+                                        <button class="view-details-btn">View Details</button>
+                                        <button class="add-to-cart-btn">Add to Cart</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card-shop" data-brand="Nike" data-type="bags">
+                                        <img src="img/nike-heritage.jpg" alt="Product 1">
+                                        <h3>Nike Heritage</h3>
+                                        <p>$26</p>
+                                        <div class="product-buttons">
+                                        <button class="view-details-btn">View Details</button>
+                                        <button class="add-to-cart-btn">Add to Cart</button>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="product-card-shop" data-brand="Vans" data-type="sneakers">
+                                        <img src="img/vans-slipon-checkerboard.webp" alt="Product 1">
+                                        <h3>Vans Slip-On "CheckerBoard"</h3>
+                                        <p>$70</p>
+                                        <div class="product-buttons">
+                                        <button class="view-details-btn">View Details</button>
+                                        <button class="add-to-cart-btn">Add to Cart</button>
+                                        </div>
+                                    </div>
+            
+                                    <div class="product-card-shop" data-brand="Vans" data-type="clothings">
+                                        <img src="img/vans-org-tall.png" alt="Product 1">
+                                        <h3>Vans Original Tall-Type T-Shirt</h3>
+                                        <p>$30</p>
+                                        <div class="product-buttons">
+                                        <button class="view-details-btn">View Details</button>
+                                        <button class="add-to-cart-btn">Add to Cart</button>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="product-card-shop" data-brand="Vans" data-type="accessories">
+                                        <img src="img/vans-sock-lavender-frost.png" alt="Product 1">
+                                        <h3>Vans AMUSEMENT 66 CREW SOCK</h3>
+                                        <p>$10</p>
+                                        <div class="product-buttons">
+                                        <button class="view-details-btn">View Details</button>
+                                        <button class="add-to-cart-btn">Add to Cart</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card-shop" data-brand="Vans" data-type="bags">
+                                        <img src="img/vans-oldskool-h20.png" alt="Product 1">
+                                        <h3>Vans Old Skool H2O</h3>
+                                        <p>$45</p>
+                                        <div class="product-buttons">
+                                        <button class="view-details-btn">View Details</button>
+                                        <button class="add-to-cart-btn">Add to Cart</button>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="product-card-shop   " data-brand="Adidas" data-type="sneakers">
+                                        <img src="img/adidas-superstar.jpg" alt="Product 1">
+                                        <h3>Adidas SuperStar</h3>
+                                        <p>$100</p>
+                                        <div class="product-buttons">
+                                        <button class="view-details-btn">View Details</button>
+                                        <button class="add-to-cart-btn">Add to Cart</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card-shop   " data-brand="Adidas" data-type="clothings">
+                                        <img src="img/adidas-crop-tee.avif" alt="Product 1">
+                                        <h3>Adidas TIRO COLORBLOCK CROP TEE</h3>
+                                        <p>$40</p>
+                                        <div class="product-buttons">
+                                        <button class="view-details-btn">View Details</button>
+                                        <button class="add-to-cart-btn">Add to Cart</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card-shop   " data-brand="Adidas" data-type="accessories">
+                                        <img src="img/adidas-sock.jpg" alt="Product 1">
+                                        <h3>Adidas ROLLER CREW SOCKS 3 PAIRS</h3>
+                                        <p>$18</p>
+                                        <div class="product-buttons">
+                                        <button class="view-details-btn">View Details</button>
+                                        <button class="add-to-cart-btn">Add to Cart</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card-shop   " data-brand="Adidas" data-type="bags">
+                                        <img src="img/adidas-mini-airliner.avif" alt="Product 1">
+                                        <h3>Adidas MINI AIRLINER BAG</h3>
+                                        <p>$48</p>
+                                        <div class="product-buttons">
+                                        <button class="view-details-btn">View Details</button>
+                                        <button class="add-to-cart-btn">Add to Cart</button>
+                                        </div>
+                                    </div>
+
+
+                            </div>
+                            <!-- Add more product cards here with the appropriate data-brand and data-type attributes -->
+                        </div>
+
+                        
+
+
+                    </div>
+                    
+                    <footer class="footer">
+                        <div class="footer-content">
+                            <div class="footer-logo">
+                                <img src="img/fashion_git_logo.svg" alt="Fashion Git Logo">
+                            </div>
+                            <div class="footer-links">
+                                <ul class="footer-nav">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-social">
+                                <ul class="social-icons">
+                                    <li><a href="#"><img src="img/facebook.svg" alt="Facebook"></a></li>
+                                    <li><a href="#"><img src="img/twitter.svg" alt="Twitter"></a></li>
+                                    <li><a href="#"><img src="img/instagram.svg" alt="Instagram"></a></li>
+                                    <li><a href="#"><img src="img/linkedin.svg" alt="LinkedIn"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <p>&copy; 2023 Fashion Git. All rights reserved.</p>
+                        </div>
+                    </footer>
+
+                </div>
+
+                <script>
+                    const viewDetailsButtons = document.querySelectorAll(".view-details-btn");
+                    viewDetailsButtons.forEach(button => {
+                      button.addEventListener("click", event => {
+                        // Code for handling the "View Details" button click, if needed.
+                        // You can add specific functionality for the "View Details" button here.
+                      });
+                    });
+                  
+                    const addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
+                    addToCartButtons.forEach(button => {
+                      button.addEventListener("click", event => {
+                        // Prevent the default behavior of the button (form submission).
+                        event.preventDefault();
+                  
+                        // Redirect the user to the "add-to-cart.html" page using JavaScript
+                        window.location.href = "add-to-cart.html";
+                      });
+                    });
+                  </script>
+
+                <script src="FG.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+            </body>

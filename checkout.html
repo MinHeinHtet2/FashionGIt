@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="FG.css">
+    <link rel="stylesheet" href="FG.js">
+    <title>Check Out | Fashion Git</title>
+</head>
+<body>
+    <div class="main_container">
+
+        <nav class="navbar navbar-dark bg-transparent fixed-top d-flex flex-row align-content-center p-0">
+            <div class="nav-container">   
+                <div class="d-flex">
+                    <a class="navbar-brand" href="index.html"><img src="img/fashion_git_logo.svg" alt=""></a>
+                </div>
+
+                <div class="nav-links">
+                    <ul class="nav nav-underline ">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="contact.html">Contact Us</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <!--Responsive Item-->
+                <div class="nav-links-sm">
+                    <ul class="nav nav-underline ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="shop.html" role="button" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+                            <li><a class="dropdown-item" href="about.html">About Fashion Git</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--Responsive Item-->
+
+                <div class="d-flex justify-content-end pt-2 pe-3">
+
+                    <!--Responsive Item-->
+                    <a href="add-to-cart.html">
+                        <span class="navbar-cart-icon">
+                            <img src="img/bag.svg" alt="" style="width: 20px;">
+                        </span>
+                    </a>
+
+                </div>
+
+                <div class="navbar-brand">
+                    <button class="navbar-toggler text-bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+                    
+            <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img src="img/fashion_git_logo.svg" alt=""></h5>
+                    <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body justify-content-between">
+                    
+                    <div class="offcanvas-section">
+
+                        <h1 class="headings" id="welcomeMessage">Welcome</h1>
+
+                        <div id="carouselExampleSlidesOnly" class="carousel slide mt-4 mb-3" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/discount-1-u.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/discount-2-u.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/discount-3-u.png" class="d-block w-100" alt="...">
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+
+                            <div class="d-flex flex-row ">
+                                <img class="payment-icon" src="/img/credit-card-fill.svg" alt="">
+                                <h1 class="headings ms-3">Payments we Accept </h1>
+                            </div>
+
+                            <div class="payment-cards-container mt-4">
+
+                                <div class="payment-cards">
+                                    <img class="payment-card-img" src="/img/kpay.png" alt="">
+                                    <p class="payment-card-text">KBZ Pay</p>
+                                </div>
+
+                                <div class="payment-cards">
+                                    <img class="payment-card-img" src="/img/ayapay.png" alt="">
+                                    <p class="payment-card-text">AYA Pay</p>
+                                </div>
+
+                                <div class="payment-cards">
+                                    <img class="payment-card-img" src="/img/wavepay.png" alt="">
+                                    <p class="payment-card-text">WAVE Pay</p>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="account-section">
+                            <a href="login.html"><button class="login-btn">Log In </button></a>
+                            <a href="account.html"><button class="see-more-btn"> Account </button></a>  
+                        </div>
+
+                    </div>
+
+                    
+
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  const userName = localStorage.getItem("userName");
+                  if (userName) {
+                    const welcomeMessageElement = document.getElementById("welcomeMessage");
+                    welcomeMessageElement.textContent = "Welcome, " + userName;
+                  }
+                });
+            </script>
+        </nav>
+
+        <div class="checkout-content-1">
+            <div class="container-md mt-5">
+                <div class="row">
+
+                    <div class="col-sm-7">
+                        <h1 class="headings mb-5"> Add Shipping Address</h1>
+
+                        <label for="name" class="form-label">Name :</label>
+                        <input class="form-control" type="text" placeholder="Enter Name" aria-label="default input example">
+
+                        <div class="row mt-4">
+                            
+                            <div class="col">
+                                <label for="name" class="form-label">Phone Number :</label>
+                                <input class="form-control" type="text" placeholder="+959" aria-label="default input example">
+                            </div>
+
+                            <div class="col">
+                                <label for="name" class="form-label">Email Address :</label>
+                                <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                            </div>
+
+                        </div>
+
+                        <div class="mt-4 mb-5">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea class="form-control" placeholder="Street / TownShip / City" id="address" rows="3"></textarea>
+                        </div>
+                        
+                        <h1 class="headings mb-5">Select Payment Methods</h1>
+
+                        <div class="payment-cards-select-container mt-4">
+
+                            <label class="payment-cards-select">
+                                <input type="radio" name="payment-method" value="KBZ Pay">
+                                <img class="payment-card-select-img" src="/img/kpay.png" alt="">
+                                <p class="payment-card-select-text">KBZ Pay</p>
+                            </label>
+        
+                            <label class="payment-cards-select">
+                                <input type="radio" name="payment-method" value="AYA Pay">
+                                <img class="payment-card-select-img" src="/img/ayapay.png" alt="">
+                                <p class="payment-card-select-text">AYA Pay</p>
+                            </label>
+        
+                            <label class="payment-cards-select">
+                                <input type="radio" name="payment-method" value="WAVE Pay">
+                                <img class="payment-card-select-img" src="/img/wavepay.png" alt="">
+                                <p class="payment-card-select-text">WAVE Pay</p>
+                            </label>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-sm-5">
+
+                        <div class="container">
+                            <h1 class="headings mb-2">Order Summary</h1>
+                            <hr class="divider mb-5">
+
+                            <div class="description-block justify-content-start align-items-center mb-5">
+                                <div class="product-image-block me-5">
+                                    <img src="img/adidas-crop-tee.avif" alt="">
+                                </div>
+                                <div class="product-name-block ">
+                                    <h5 class="addtocart-text">Adidas TIRO COLORBLOCK CROP TEE</h5>
+                                    <h6 class="unit-price">$40</h6>
+                                </div>
+                            </div>
+
+                            <div class="description-block justify-content-start align-items-center">
+                                <div class="product-image-block me-5">
+                                    <img src="img/vans-slipon-checkerboard.webp" alt="">
+                                </div>
+                                <div class="product-name-block">
+                                    <h5 class="addtocart-text">Vans Slip-On "CheckerBoard"</h5>
+                                    <h6 class="unit-price">$70</h6>
+                                </div>
+                            </div>
+
+                            <div class="row mt-5">
+                                <div class="col">
+                                    <h5> Sub Total :</h5>
+                                </div>
+    
+                                <div col class="col">
+                                    <div class="sub-total">$110</div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <h5> Shipping :</h5>
+                                </div>
+    
+                                <div col class="col">
+                                    <div class="sub-total">$5   </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <h5> Total :</h5>
+                                </div>
+    
+                                <div col class="col">
+                                    <div class="sub-total">$115</div>
+                                </div>
+                            </div>
+
+                            <button class="add-to-cart-btn" id="placeOrderBtn">Place Order</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="orderCompleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Order Complete</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Thank you for your order! Your order has been successfully placed.
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="index.html"><button type="button" class="add-to-cart-btn" data-bs-dismiss="modal">Continue Shopping</button></a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/fashion_git_logo.svg" alt="Fashion Git Logo">
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <ul class="social-icons">
+                        <li><a href="#"><img src="img/facebook.svg" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="img/twitter.svg" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="img/instagram.svg" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="img/linkedin.svg" alt="LinkedIn"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Fashion Git. All rights reserved.</p>
+            </div>
+        </footer>
+        
+    </div>  
+
+    <script>
+        // Get a reference to the button
+        const placeOrderBtn = document.getElementById("placeOrderBtn");
+      
+        // Attach a click event listener to the button
+        placeOrderBtn.addEventListener("click", function() {
+          // Show the modal when the button is clicked
+          const orderCompleteModal = new bootstrap.Modal(document.getElementById("orderCompleteModal"));
+          orderCompleteModal.show();
+        });
+      </script>
+      
+
+    <script src="FG.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+</body>
+</html>

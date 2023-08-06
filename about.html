@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="FG.css">
+    <link rel="stylesheet" href="FG.js">
+    <title>About Us | Fashion Git</title>
+</head>
+<body>
+    <div class="main_container">
+
+        <nav class="navbar navbar-dark bg-transparent fixed-top d-flex flex-row align-content-center p-0">
+                        <div class="nav-container">   
+                            <div class="d-flex">
+                                <a class="navbar-brand" href="index.html"><img src="img/fashion_git_logo.svg" alt=""></a>
+                            </div>
+
+                            <div class="nav-links">
+                                <ul class="nav nav-underline ">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="shop.html">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="about.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="contact.html">Contact Us</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <!--Responsive Item-->
+                            <div class="nav-links-sm">
+                                <ul class="nav nav-underline ">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="shop.html" role="button" aria-expanded="false">Shop</a>
+                                        <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="index.html">Home</a></li>
+                                        <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+                                        <li><a class="dropdown-item" href="about.html">About Fashion Git</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--Responsive Item-->
+
+                            <div class="d-flex justify-content-end pt-2 pe-3">
+
+                                <!--Responsive Item-->
+                                <a href="add-to-cart.html">
+                                    <span class="navbar-cart-icon">
+                                        <img src="img/bag.svg" alt="" style="width: 20px;">
+                                    </span>
+                                </a>
+                                
+
+                            </div>
+
+                            <div class="navbar-brand">
+                                <button class="navbar-toggler text-bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                                
+                        <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img src="img/fashion_git_logo.svg" alt=""></h5>
+                                <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+
+                            <div class="offcanvas-body justify-content-between">
+                                
+                                <div class="offcanvas-section">
+
+                                    <h1 class="headings" id="welcomeMessage">Welcome</h1>
+
+                                    <div id="carouselExampleSlidesOnly" class="carousel slide mt-4 mb-3" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/discount-1-u.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/discount-2-u.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/discount-3-u.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="account-section">
+                                        <a href="login.html"><button class="login-btn">Log In </button></a>
+                                        <a href="account.html"><button class="see-more-btn"> Account </button></a>  
+                                    </div>
+ 
+                                </div>
+
+                                
+
+                            </div>
+                        </div>
+
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                              const userName = localStorage.getItem("userName");
+                              if (userName) {
+                                const welcomeMessageElement = document.getElementById("welcomeMessage");
+                                welcomeMessageElement.textContent = "Welcome, " + userName;
+                              }
+                            });
+                            </script>
+
+
+        </nav>
+
+        <div class="aboutus-1"> 
+
+            <div class="row">
+                <div class="col-sm-4 d-flex justify-content-center align-item-center" style="margin-top: 50px;">
+                    <div  class="mt-5 d-none d-md-block ">
+                        <p>
+                            About Us. <br>
+                            Our Goals. <br>
+                            Teams.
+                        </p>
+                    </div>                        
+                </div>
+                <div class="col-sm-8 p-3">
+                    <h1 class="aboutus-head"> About Us</h1>
+                    <p>Welcome to FashionGit, your ultimate destination for all things fashion! We are a passionate team of trendsetters and fashion enthusiasts dedicated to bringing you the latest styles, trends, and inspirations from the world of fashion.</p>
+                    <p>FashionGit was founded with a vision to redefine the way people experience fashion. Our journey began with a simple idea - to create a platform where fashion-forward individuals could explore a diverse range of clothing, accessories, and lifestyle products. From classic elegance to cutting-edge streetwear, we wanted to curate a collection that caters to every taste and style.</p>
+                </div>
+            </div>
+
+            <div class="p-5">
+                <img src="/img/people.jpg" class="img-fluid" alt="...">
+            </div>
+            
+        </div>
+
+        <div class="aboutus-2">
+            <div class="row">
+                <div class="col p-5 d-flex justify-content-center align-items-center">
+                    <div style="margin-left: 50px;">
+                        <h1><i>"Elevate Your Style: Where Fashion Meets Elegance"</i></h1>
+                        <p class="text-end mt-3">- FashionGit</p>
+                    </div>
+                </div>
+                <div class="col p-5 d-none d-md-block">
+                    <img src="/img/aboutus2.jpg" class="img-fluid" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutus-3">
+            <div class="row">
+                <div class="col p-5 d-none d-md-block">
+                    <img src="/img/team.png" class="img-fluid" alt="...">
+                </div>
+                <div class="col p-5">
+                    <div style="margin-left: 50px;">
+                        <h1>THE TEAM.</h1>
+                        <p class="mt-5">At FashionGit, our success story wouldn't be complete without the remarkable individuals who form the backbone of our organization. Our team is a dedicated group of fashion enthusiasts, creative minds, and business professionals who share a common passion for elevating style and redefining elegance in the fashion world.</p>
+                    <p>Together, we strive to create a fashion destination that celebrates individuality, empowers self-expression, and sets new standards of elegance. Our team's dedication and passion are the driving forces behind FashionGit's success, and we are committed to continuing this journey of style, sophistication, and customer delight.</p>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/fashion_git_logo.svg" alt="Fashion Git Logo">
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <ul class="social-icons">
+                        <li><a href="#"><img src="img/facebook.svg" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="img/twitter.svg" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="img/instagram.svg" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="img/linkedin.svg" alt="LinkedIn"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Fashion Git. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>  
+        
+
+  
+    
+        
+    <script src="FG.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+</body>
+</html>

@@ -1,0 +1,324 @@
+<nav class="navbar navbar-dark bg-transparent fixed-top d-flex flex-row align-content-center p-0">
+    <div class="nav-container">   
+        <div class="d-flex">
+            <a class="navbar-brand" href="index.html"><img src="img/fashion_git_logo.svg" alt=""></a>
+        </div>
+
+        <div class="nav-links">
+            <ul class="nav nav-underline ">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Brands</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Nike</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!--Responsive Item-->
+        <div class="nav-links-sm">
+            <ul class="nav nav-underline ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="shop.html" role="button" aria-expanded="false">Shop</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html">Home</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--Responsive Item-->
+
+        <div class="d-flex justify-content-end pt-2 pe-3">
+
+            <!--Responsive Item-->
+            <span class="navbar-cart-icon">
+                <img src="img/bag.svg" alt="" style="width: 20px;">
+            </span>
+
+        </div>
+
+        <div class="navbar-brand">
+            <button class="navbar-toggler text-bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+
+            
+    <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img src="img/fashion_git_logo.svg" alt=""></h5>
+            <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            
+            <h1>Welcome!</h1>
+
+            <a href="login.html"><button class="see-more-btn">Log In </button></a>
+
+
+        </div>
+    </div>
+</nav>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="img/fashion_git_logo.svg" alt="Fashion Git Logo">
+        </div>
+        <div class="footer-links">
+            <ul class="footer-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <ul class="social-icons">
+                <li><a href="#"><img src="img/facebook.svg" alt="Facebook"></a></li>
+                <li><a href="#"><img src="img/twitter.svg" alt="Twitter"></a></li>
+                <li><a href="#"><img src="img/instagram.svg" alt="Instagram"></a></li>
+                <li><a href="#"><img src="img/linkedin.svg" alt="LinkedIn"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 Fashion Git. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<div class="detail-content">
+
+    <div class="row">
+        <div class="col-md-6">
+
+        <div class="gallery-container d-flex justify-content-center align-items-center">
+            <div class="ecommerce-gallery">
+                <div class="row py-3 shadow-5">
+                    <div class="col-12 mb-1">
+                    <div class="lightbox">
+                        <img src="/img/adidas-sock.avif" class="img-fluid" alt="...">
+                    </div>
+                    </div>
+                    <div class="col-3 mt-1">
+                    <img src="/img/adidas-sock2.avif" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-3 mt-1">
+                    <img src="/img/adidas-sock3.avif" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="col-md-6 p-5">
+            <div class="product-details">
+                
+                <h1 class="product-name">Adidas ROLLER CREW SOCKS 3 PAIRS</h1>
+                <p class="product-price">$18</p>
+                <p class="product-detail-1">Size</p>
+
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>---Choose Size---</option>
+                    <option value="1">M</option>
+                    <option value="2">L</option>
+                </select>
+
+                <button class="add-to-cart-btn">Add to Cart</button>
+
+                
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                        </div>
+                </div>
+                
+
+                
+
+            </div>
+    
+        </div>
+    </div>
+
+</div>
+
+
+// Get references to the necessary elements
+const brandContainer = document.querySelector(".brand-container");
+const contentShop1 = document.querySelector(".content-shop-1");
+const productCardContainerVertical = document.querySelector(".product-card-container-vertical"); // Vertical container
+const productItemsHorizontal = document.querySelectorAll(".product-card-container-horizontal .product-card-shop"); // Horizontal product cards
+const productItemsVertical = document.querySelectorAll(".product-card-container-vertical .product-card-shop"); // Vertical product cards
+
+// Function to update the product items based on the selected brand and type
+function updateProductItems(brand, type) {
+    productItemsHorizontal.forEach((item) => {
+        const brandName = item.getAttribute("data-brand");
+        const productType = item.getAttribute("data-type");
+        const shouldShow = (brand === "All Items" || brandName === brand) && (type === "all" || productType === type);
+        item.style.display = shouldShow ? "inline-block" : "none"; // Use "inline-block" to show horizontally
+    });
+
+    productItemsVertical.forEach((item) => {
+        const brandName = item.getAttribute("data-brand");
+        const productType = item.getAttribute("data-type");
+        const shouldShow = (brand === "All Items" || brandName === brand) && (type === "all" || productType === type);
+        item.style.display = shouldShow ? "block" : "none";
+    });
+
+    // Add the following block of code to handle "Bags" items in vertical container
+    if (type === "bags") {
+        const bagsItems = productCardContainerVertical.querySelectorAll("[data-type='bags']");
+        bagsItems.forEach((item) => {
+            const brandName = item.getAttribute("data-brand");
+            const shouldShow = (brand === "All Items" || brandName === brand);
+            item.style.display = shouldShow ? "inline-block" : "none";
+        });
+    }
+
+    // Update the title based on the selected brand name
+    document.querySelector(".col h1").textContent = brand;
+}
+
+// Add event listener to each brand item
+brandContainer.addEventListener("click", (event) => {
+    const targetBrand = event.target.closest(".brand-item");
+    if (!targetBrand) return;
+
+    // Remove active class from all brand items
+    brandContainer.querySelectorAll(".brand-item").forEach((brand) => {
+        brand.classList.remove("active");
+    });
+
+    // Add active class to the clicked brand item
+    targetBrand.classList.add("active");
+
+    // Get the background image from the data attribute of the clicked brand
+    const bgImage = targetBrand.getAttribute("data-bg-image");
+
+    // Update the background image of the content-shop-1
+    contentShop1.style.backgroundImage = `url('${bgImage}')`;
+
+    // Update the product items based on the selected brand
+    const selectedBrandName = targetBrand.querySelector(".brand-name").textContent;
+    updateProductItems(selectedBrandName, "all");
+});
+
+// Get references to the filter buttons
+const filterButtons = document.querySelectorAll(".dropdown-item");
+
+// Add event listener to each filter button
+filterButtons.forEach((button) => {
+    button.addEventListener("click", (event) => {
+        const selectedFilter = event.target.textContent.toLowerCase();
+        const selectedBrand = brandContainer.querySelector(".brand-item.active .brand-name").textContent;
+        updateProductItems(selectedBrand, selectedFilter);
+    });
+});
+
+// Get reference to the search input field
+const searchInput = document.getElementById("search-input");
+
+// Add event listener to the search input field
+searchInput.addEventListener("input", () => {
+    const searchQuery = searchInput.value.toLowerCase().trim();
+    if (searchQuery === "") {
+        // If search query is empty, show all product items
+        updateProductItems("All Items", "all");
+    } else {
+        // Filter product items based on the search query
+        productItemsHorizontal.forEach((item) => {
+            const productName = item.querySelector("h3").textContent.toLowerCase();
+            const shouldShow = productName.includes(searchQuery);
+            item.style.display = shouldShow ? "inline-block" : "none"; // Use "inline-block" to show horizontally
+        });
+
+        productItemsVertical.forEach((item) => {
+            const productName = item.querySelector("h3").textContent.toLowerCase();
+            const shouldShow = productName.includes(searchQuery);
+            item.style.display = shouldShow ? "block" : "none";
+        });
+    }
+});
+
+// Get all "View Details" buttons
+const viewDetailsButtons = document.querySelectorAll(".view-details-btn");
+
+// Add event listener to each "View Details" button
+viewDetailsButtons.forEach((button) => {
+button.addEventListener("click", (event) => {
+    // Get the parent product card element of the clicked button
+    const productCard = event.target.closest(".product-card-shop");
+
+    // Get the data attributes of the product card
+    const brand = productCard.getAttribute("data-brand");
+    const type = productCard.getAttribute("data-type");
+    const productName = productCard.querySelector("h3").textContent;
+
+    // Construct the URL for the product-details.html page with query parameters
+    const url = `product-details.html?brand=${encodeURIComponent(brand)}&type=${encodeURIComponent(type)}&name=${encodeURIComponent(productName)}`;
+
+    // Redirect to the product-details.html page
+    window.location.href = url;
+});
+});
+
+
+
+
+
+
+
+
